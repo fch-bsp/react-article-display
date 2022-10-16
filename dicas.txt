@@ -1,0 +1,52 @@
+k3d cluster create --servers 1 --agents 2
+
+2. kubectl create namespace argocd
+
+3. kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+4. kubectl get all -n argocd
+
+
+6. kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+
+
+comando para acessar argo via terminal
+
+argocd login localhost:8080
+
+EMdw4PZH9CT-vI61
+argocd app sync nomeapp
+argocd app get nomeapp
+----------Acesso na aplicação------------
+
+kubectl port-forward  service/argocd-server 8080:443 -n argocd
+http://localhost:8080/
+
+
+
+kubectl port-forward  svc/webcolor -n webcolor 8787:80
+
+http://localhost:9191/
+
+
+
+
+
+-----    libera porta ----------------------------
+
+sudo netstat -tlpn
+sudo kill -9 $(lsof -t -i:8080)
+---------------------
+
+dicas:
+# Lista todos os processos que estão rodando
+sudo netstat -tlpn
+
+# Lista todos os processos que estão rodando na porta 8080
+sudo netstat -tlpn | grep 8080
+
+# Mata processo que está rodando na porta 8080
+sudo kill -9 `sudo lsof -t -i:8080`
+sudo kill -9 $(lsof -t -i:8081)
+
+----------------------------------
