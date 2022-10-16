@@ -1,6 +1,6 @@
 * {
     font-family:Georgia, Arial, Helvetica, Sans-serif,serif;
-    background-color: #ffffff;
+    background-color: #0eeff7;
     max-width: 1200px;
     margin: auto auto;
 }
@@ -62,7 +62,7 @@
 
 .delete, .submit {
     grid-area: f;
-   background-color:  red;
+   background-color:  rgb(16, 76, 241);
    color: #ffffff;
    height: 32px;
    border: none;
