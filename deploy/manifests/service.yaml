@@ -4,6 +4,7 @@ metadata:
   name: react-application
   labels:
     run: react-application
+    namespace: app-consult
 spec:
   type: NodePort
   ports:
