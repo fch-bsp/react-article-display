@@ -120,7 +120,7 @@ const App = () => {
         <p className="url">Título</p>
         <p className="author">Autor</p>
         <p className="date">Data</p>
-        <p className="comments">Comments</p>
+        <p className="comments">COMENTÁRIOS</p>
         <p className="points">Pontos</p>
         <p className="button">Delete</p>
       </div>
