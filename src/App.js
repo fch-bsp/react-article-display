@@ -54,7 +54,7 @@ const storiesReducer = (state, action) => {
 const App = () => {
   const [searchTerm, setSearchTerm] = useSemiPersistentState(
     'search',
-    'Kubernetes'
+    'Kubernetes docker'
   )
 
   const [url, setUrl] = React.useState(
@@ -104,7 +104,7 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="title">Let's learn about DevSecOps</h1>
+      <h1 className="title">Vamos aprender sobre DevSecOps</h1>
 
       <SearchForm
         searchTerm={searchTerm}
@@ -117,11 +117,11 @@ const App = () => {
       {stories.isError && <p>Something went wrong ...</p>}
 
       <div className="header">
-        <p className="url">Title</p>
-        <p className="author">Author</p>
-        <p className="date">Date</p>
+        <p className="url">Título</p>
+        <p className="author">Autor</p>
+        <p className="date">Data</p>
         <p className="comments">Comments</p>
-        <p className="points">Points</p>
+        <p className="points">Pontos</p>
         <p className="button">Delete</p>
       </div>
 

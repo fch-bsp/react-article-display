@@ -1,3 +1,13 @@
+02 docker build -t nandocloud/app-consult:latest . 
+
+03 docker push nandocloud/app-consult:latest
+
+04 docker run --rm -p 8080:8080 nandocloud/argocdbsp:latest
+
+05 kubectl port-forward  svc/goapp 8080:8080
+
+16 kustomize build
+
 k3d cluster create --servers 1 --agents 2
 
 2. kubectl create namespace argocd
