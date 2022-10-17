@@ -104,7 +104,7 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="title">Vamos aprender sobre DevSecOps</h1>
+      <h1 className="title">Vamos aprender sobre DevOps e DevSecOps</h1>
 
       <SearchForm
         searchTerm={searchTerm}
