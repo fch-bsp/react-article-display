@@ -8,5 +8,5 @@ namespace: app-consult
 
 images:
 - name: react-application
-  newName: app-consult
+  newName: appconsult
   newTag: latest
