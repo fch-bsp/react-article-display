@@ -9,7 +9,7 @@ namespace: app-consult
 images:
 - name: appconsult
   newName: nandocloud/app-consult
-  newTag: f5e562123e408c1239af978192b29f57cf9339b6
+  newTag: 645e789a484ff8946b01dd5e8e583b6c0d793255
 - name: react-application
   newName: appconsult
   newTag: latest
