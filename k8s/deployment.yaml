@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: react-application
-        image: nandocloud/app-consult
+        image: appconsult
         ports:
           - containerPort: 80
         imagePullPolicy: Always
