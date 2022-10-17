@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: react-application
-  namespace: app-consult
 spec:
   replicas: 2
   selector:
@@ -15,7 +14,7 @@ spec:
     spec:
       containers:
       - name: react-application
-        image: nandocloud/app-consult:3.0
+        image: goaop
         ports:
           - containerPort: 80
         imagePullPolicy: Always
