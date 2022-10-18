@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: react-application
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       run: react-application
